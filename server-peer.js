@@ -9,6 +9,9 @@ const users = {};
 const path = require("path");
 const PORT = process.env.PORT || 8003;
 
+app.use(cors());
+app.options("*", cors());
+
 io.on("connection", (socket) => {
   socket.on("joinroom", (payload) => {
     console.log(payload);
