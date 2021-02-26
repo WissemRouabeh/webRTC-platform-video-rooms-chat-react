@@ -8,6 +8,7 @@ const io = socket(server);
 const users = {};
 const path = require("path");
 const PORT = process.env.PORT || 8003;
+const cors = require("cors");
 
 app.use(cors());
 
