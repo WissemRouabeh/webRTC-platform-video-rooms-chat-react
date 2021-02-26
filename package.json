@@ -2,7 +2,7 @@
   "name": "webrtc",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server-peer.js",
   "scripts": {
     "start": "node server-peer.js",
     "server": "nodemon server-peer.js",
