@@ -22,6 +22,7 @@ const Chat = (props) => {
   const peers = {};
   const [type, setType] = useState();
   const mypeer = new Peer(undefined, {
+    secure: "true",
     host: "wissemrouabehplatform.herokuapp.com",
     port: "443",
   });
