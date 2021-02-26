@@ -156,7 +156,7 @@ const Chat = (props) => {
       <input type="text" onChange={whoami} className="who" />
       {!join && type && (
         <button type="button" onClick={() => setJoin(true)}>
-          JOIN
+          JOINs
         </button>
       )}
     </div>
