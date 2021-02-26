@@ -28,7 +28,7 @@ const Chat = (props) => {
   // });
 
   const mypeer = new Peer(undefined, {
-    host: "wissemazeqsd.herokuapp.com",
+    host: "wissemrouabehplatform.herokuapp.com",
     port: 443,
     path: "/",
     secure: true,
