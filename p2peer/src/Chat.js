@@ -24,7 +24,9 @@ const Chat = (props) => {
   const mypeer = new Peer(undefined, {
     // secure: "true",
     host: "wissemrouabehplatform.herokuapp.com",
-    port: "9000",
+    port: 443,
+    path: "/",
+    secure: true,
   });
 
   useEffect(() => {
