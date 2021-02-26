@@ -6,6 +6,7 @@ const server = http.createServer(app);
 const socket = require("socket.io");
 const io = socket(server);
 const users = {};
+const path = require("path");
 const PORT = process.env.PORT || 8003;
 
 io.on("connection", (socket) => {
@@ -45,6 +46,9 @@ app.use("/", rout);
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("p2peer/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "p2peer", "build", "index.html"));
+  });
 }
 
 server.listen(PORT, () => console.log("server is running on port " + PORT));
