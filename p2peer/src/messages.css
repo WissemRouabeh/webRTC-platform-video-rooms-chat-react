@@ -1,0 +1,19 @@
+.messages__container {
+  display: flex;
+  /* align-self: center; */
+}
+.messages__sidebar {
+  flex: 0.3;
+  height: 85vh;
+  background-color: #f5f5f5;
+  scroll-behavior: smooth;
+  /* overflow: scroll; */
+  overflow-y: auto;
+  width: fit-content;
+}
+.messages__messages {
+  flex: 0.5;
+  height: 85vh;
+  /* background-color: #f5f5f5; */
+  width: fit-content;
+}
