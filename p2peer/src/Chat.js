@@ -21,8 +21,13 @@ const Chat = (props) => {
   const [myactualstream, setMyactualstream] = useState();
   const peers = {};
   const [type, setType] = useState();
+
+  // const mypeer = new Peer(undefined, {
+  //   host: "/",
+  //   port: "9000",
+  // });
+
   const mypeer = new Peer(undefined, {
-    // secure: "true",
     host: "wissemazeqsd.herokuapp.com",
     port: 443,
     path: "/",
@@ -158,7 +163,7 @@ const Chat = (props) => {
       <input type="text" onChange={whoami} className="who" />
       {!join && type && (
         <button type="button" onClick={() => setJoin(true)}>
-          JOINs
+          JOIN
         </button>
       )}
     </div>
