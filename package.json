@@ -8,7 +8,7 @@
     "server": "nodemon server-peer.js",
     "build": "cd p2peer && npm run build",
     "install-client": "cd p2peer && npm install",
-    "heroku-postbuild": "cd p2peer && npm install && npm run build",
+    "heroku-postbuild": "npm run install-client && npm run build",
     "pserver": "nodemon server-peer.js"
   },
   "author": "",
