@@ -42,7 +42,7 @@ function Landing() {
   function clickAction() {
     if (localStorage.getItem("id") == null) {
       localStorage.setItem("username", "unregistred");
-      localStorage.setItem("id", "unregistred123456aze7e4s");
+      localStorage.setItem("id", "unregistred123456aze8e4s");
     }
     history.push({
       pathname: "/preparing",

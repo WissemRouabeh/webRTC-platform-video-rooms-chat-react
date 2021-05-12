@@ -1,0 +1,22 @@
+.displayrooms__body {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  scroll-behavior: smooth;
+}
+.displayrooms__tabs {
+}
+#tabs {
+  /* border: blue 1px solid; */
+  position: absolute;
+  right: 25%;
+  width: 50%;
+  top: 65px;
+  background-color: rgba(245, 245, 245, 0.349);
+}
+#diplayrooms__loader {
+  position: absolute;
+  top: 45vh;
+  left: 48vw;
+  /* border: 1px solid black; */
+}

@@ -1,0 +1,34 @@
+.createroom__container {
+  display: flex;
+}
+.createroom__bannerpic {
+  margin: 10px;
+  border-radius: 10px;
+  border: solid 1px grey;
+  padding: 10px;
+  cursor: pointer;
+}
+.createroom__bannerpic img {
+  width: 400px;
+  height: 400px;
+}
+.createroom__form {
+  padding: 5px;
+  margin-top: 30px;
+  width: 40vw;
+  /* border: 1px solid black; */
+}
+.createroom__description {
+  margin-top: 10px;
+}
+.createroom__submit {
+  position: absolute;
+  bottom: 100px;
+  right: 10px;
+}
+.createroom__Price__input {
+  margin-top: 10px;
+}
+.createroom__horaire {
+  margin: 10px;
+}

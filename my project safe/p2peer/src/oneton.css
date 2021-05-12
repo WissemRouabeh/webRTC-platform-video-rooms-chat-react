@@ -1,0 +1,16 @@
+.Oneton__container {
+}
+.Oneton__container {
+  width: 20px;
+  height: 100%;
+}
+.oneton__ownervideo video {
+  border: greenyellow;
+  width: 100px;
+  height: 100px;
+}
+.oneton__participantvideo video {
+  border: greenyellow;
+  width: 200px;
+  height: 200px;
+}

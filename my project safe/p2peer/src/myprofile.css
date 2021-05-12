@@ -1,0 +1,124 @@
+.myprofile__container {
+  width: 70vw;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 0 10px grey;
+}
+.myprofile__banner {
+  background-color: #faac1abb;
+  height: 100px;
+  /* display: flex; */
+  position: relative;
+}
+.myprofile__name {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+  left: 150px;
+}
+.myprofile__body {
+  background-color: #f4f4f4be;
+  height: 70vh;
+}
+.myprofile__socialmedia {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.myprofile__socialmedia .MuiSvgIcon-root {
+  font-size: 30px !important;
+  cursor: pointer;
+}
+
+.myprofile__socialmedia .MuiSvgIcon-root:hover {
+  color: rgb(241, 114, 135) !important;
+}
+
+.myprofile__bio {
+  margin-left: 200px;
+  /* border: 1px solid black; */
+  height: 200px;
+}
+.myprofile__pic {
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 10px;
+  width: 120px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.myprofile__footer {
+  /* background-color: #30414b; */
+  background-color: #5c7886;
+  width: 70vw;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  /* left: -100px; */
+}
+.myprofile__footer__circular {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 47%;
+  display: grid;
+  place-items: center;
+}
+.myprofile__footer__circular2 {
+  background-color: #faab1a;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  margin-top: 5px;
+}
+.myprofile__footer__circular2 .MuiSvgIcon-root {
+  color: black !important;
+  margin-top: -5px;
+  font-size: 25px !important;
+}
+.myprofile__socialmedia__facebook > .MuiSvgIcon-root {
+  color: #1976d2 !important;
+}
+.myprofile__socialmedia_whatsapp > .MuiSvgIcon-root {
+  color: #14ca36 !important;
+}
+
+.myprofile__socialmedia__linkedin > .MuiSvgIcon-root {
+  color: #05517a !important;
+}
+.myprofile__cards {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 10%;
+  /* border: 1px solid black; */
+  width: 70%;
+}
+
+.myprofile__card {
+  background-color: white;
+  margin: 5px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 0 30px 1px #fbc257;
+}
+.myprofile__card_separator {
+  background-color: grey;
+  height: 1px;
+  margin-top: 10px;
+}

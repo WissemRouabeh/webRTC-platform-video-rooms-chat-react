@@ -1,0 +1,32 @@
+.message__container {
+  width: fit-content;
+  max-width: 40vw;
+  min-width: 10vw;
+  position: relative;
+  margin-right: 20px;
+  margin: 10px 20px;
+  padding: 7px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  /* float: right;
+  background-color: rgba(12, 93, 170, 0.877); */
+}
+.message__sender {
+  position: absolute;
+  top: -2.2vh;
+  left: 1.5vw;
+  font-size: smaller;
+  color: rgb(65, 64, 64);
+}
+.message__time {
+  position: absolute;
+  bottom: -2.2vh;
+  right: 1.5vw;
+  font-size: smaller;
+  color: rgb(65, 64, 64);
+}
+@media only screen and (max-width: 920px) {
+  .message__time {
+    display: none;
+  }
+}

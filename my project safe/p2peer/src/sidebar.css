@@ -1,0 +1,29 @@
+.sidebar__card > .MuiSvgIcon-root {
+  color: #bdbdbd !important;
+  font-size: 20px;
+  margin-right: 5px;
+}
+.sidebar__container {
+}
+.sidebar__card {
+  background-color: white;
+  width: 90%;
+  margin-top: 10px;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-left: -10px;
+  font-size: 17px !important;
+}
+.sidebar__card:hover {
+  transform: scale(1.0081);
+  box-shadow: 0 0 7px grey;
+  font-weight: 500;
+  color: #1976d2;
+}
+.sidebar__card:hover > .MuiSvgIcon-root {
+  color: #1976d2 !important;
+}

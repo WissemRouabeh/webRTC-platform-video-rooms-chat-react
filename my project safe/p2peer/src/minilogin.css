@@ -1,0 +1,40 @@
+.minilogin__form {
+  position: absolute;
+  width: 20vw;
+  height: 20vh;
+  padding: 5vh 1vw;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(250, 235, 215, 0.377);
+  margin-top: 3vh;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  transition: 2s all;
+}
+.minilogin__button {
+  color: white;
+  background-color: #1976d2;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 7vw;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+}
+.minilogin__button:focus {
+  outline: 0;
+}
+input {
+  margin-top: 10px;
+  height: 25px;
+  outline: inherit;
+  font-size: 14px;
+}
+.minilogin__message {
+  color: red;
+  font-size: 14;
+}

@@ -1,0 +1,5 @@
+.roomcard__container {
+  margin: 10px;
+  transition: all 1s;
+  width: 300px;
+}

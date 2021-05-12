@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.uservideo .partnervideo {
+  width: 500px;
+  height: 500px;
+  border: black 2px solid;
+  background-color: black;
+}

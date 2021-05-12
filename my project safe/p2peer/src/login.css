@@ -1,0 +1,82 @@
+/* .login__button {
+  color: primary
+} */
+.login__form {
+  border: 1px #cccdce solid;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f6f8fa;
+  width: 270px;
+  height: 200px;
+}
+/* .login__container {
+  border: 1px #cccdce solid;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f6f8fa;
+  width: 270px;
+  height: 200px;
+} */
+.login__email__input,
+.login__password__input {
+  width: 100%;
+  border: 1px #cccdce solid;
+  border-radius: 5px;
+  outline: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.login__email__input:focus,
+.login__password__input:focus {
+  filter: drop-shadow(0 0 2px #1976d2);
+}
+.login__email__text,
+.login__password__text {
+  font-size: 14px;
+  font-weight: 500;
+}
+.login__button__section {
+  margin-top: 20px;
+  display: grid;
+  place-items: center;
+}
+.login__button {
+  background-color: #1976d2 !important;
+  width: 150px;
+  height: 30px;
+  text-transform: inherit !important;
+  font-size: 13px !important;
+  text-align: right !important;
+}
+.login__password__text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.login__forgot__text {
+  cursor: pointer;
+  color: #097aec;
+}
+.login__signup {
+  width: 270px;
+  margin-top: 20px;
+  border: 1px #cccdce solid;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+.login__signup__create {
+  cursor: pointer;
+  color: #097aec;
+  font-weight: 500;
+}

@@ -1,0 +1,15 @@
+.discoverrooms__body {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  scroll-behavior: smooth;
+}
+
+#tabs {
+  /* border: blue 1px solid; */
+  position: absolute;
+  right: 22.5%;
+  width: 55%;
+  top: 65px;
+  background-color: rgba(245, 245, 245, 0.349);
+}
