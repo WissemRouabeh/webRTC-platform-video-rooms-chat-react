@@ -1,10 +1,55 @@
-.containermsg {
+.messaging__container {
   display: flex;
   flex-direction: column;
+  width: 99%;
 }
-.box {
+.messaging__box {
   background-color: white;
-  width: 100%;
-  height: 70vh;
-  margin: 10px 0;
+  /* flex: 1; */
+  /* border: 1px solid black; */
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  /* margin: 10px 0; */
+}
+.messaging__sendaction {
+  /* width: 100%; */
+  border-top: 1px solid rgba(0, 0, 0, 0.13);
+  /* border-bottom: 1px solid black; */
+  display: flex;
+  align-items: center;
+  /* border-radius: 5px; */
+  padding-top: 10px;
+}
+.messaging__sendaction input {
+  flex: 1;
+  margin-top: 0;
+  outline: inherit;
+  border: none;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.247);
+  padding-right: 30px;
+  word-break: break-word;
+}
+.messanging__sendbtn {
+  font-size: 2rem !important;
+  color: #344955;
+  cursor: pointer;
+}
+
+.messaging__sendaction input:hover {
+  border-bottom: 2px solid #344955;
+  /* border-left: 2px solid #344955;
+  border-top: 2px solid #344955; */
+}
+
+.messaging__sendaction input:focus {
+  border-bottom: 2px solid #344955;
+  /* border-left: 2px solid #344955;
+  border-top: 2px solid #344955; */
+}
+.messanging__sendbtn {
+  position: absolute;
+  right: 0;
 }

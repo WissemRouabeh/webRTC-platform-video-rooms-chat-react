@@ -1,9 +1,9 @@
 import React from "react";
 
-function Newtocall({ name }) {
+function Newtocall() {
   return (
     <div>
-      <p>you have a call {name}</p>
+      {/* <p>you have a call {name}</p> */}
       <button type="button">accept</button>
     </div>
   );

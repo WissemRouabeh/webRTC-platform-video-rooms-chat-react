@@ -1,0 +1,114 @@
+.cardpage__holder {
+  /* height: 100vh;
+  width: 100vw; */
+}
+.cardpage__container {
+  background-color: #f6f8fab4;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: flex;
+  width: 80%;
+  /* margin: 20px;
+  border: 2px solid black; */
+  border-radius: 5px;
+  padding: 10px;
+  filter: drop-shadow(0 10px 10px rgb(236, 233, 233));
+}
+.cardpage__informations {
+  flex: 1;
+}
+.cardpage__name {
+  font-weight: 700;
+  color: grey;
+}
+.cardpage__participants {
+  /* border: 1px solid black; */
+  width: 100%;
+  padding: 5px;
+}
+.cardpage__listparticipants {
+  margin: 5px;
+  border: 0.5px solid rgba(128, 128, 128, 0.13);
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.cardpage__participant {
+  margin: 2px 3px;
+  width: fit-content;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(177, 208, 248);
+  background-color: rgba(248, 244, 244, 0.24);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: grey;
+}
+.cardpage__addparticipant {
+  /* border: 1px solid grey; */
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+.cardpage__addparticipant > input {
+  margin-top: 0px;
+  flex: 1;
+  border: none;
+  outline: inherit;
+}
+.cardpage__horaire {
+  font-style: italic;
+  margin: 10px 5px;
+  font-size: 12px;
+}
+.cardpage__owner {
+  font-style: italic;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.cardpage__join {
+  float: right;
+  /* margin-left: auto; */
+
+  margin-right: 10%;
+}
+.cardpage__invite {
+  margin-left: -10px;
+}
+.cardpage__payable {
+  display: flex;
+  font-weight: 600;
+}
+.cardpage__public {
+  margin: 5px 0;
+  display: flex;
+}
+.cardpage__buttondescription {
+  position: absolute;
+  left: 44%;
+  margin-top: -22px;
+}
+.cardpage__description {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 90%;
+  filter: drop-shadow(0 10px 10px rgb(236, 233, 233));
+  transition: all 2s;
+}
+.cardpage__divider {
+  box-shadow: 0 0 1 grey;
+}
+.cardpage__banner img {
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+}

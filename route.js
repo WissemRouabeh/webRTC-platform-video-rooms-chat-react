@@ -1,7 +1,9 @@
-const router = require("express").Router();
+const express = require("express");
 
-router.route("/").get((req, res) => {
-  res.json("wissem");
-});
+const app = express();
+const user = require("./routes/user");
+const room = require("./routes/room");
 
-module.exports = router;
+app.use("/user", user);
+app.use("/room", room);
+module.exports = app;

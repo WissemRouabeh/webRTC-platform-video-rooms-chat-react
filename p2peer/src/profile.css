@@ -1,0 +1,91 @@
+.profile__container {
+  display: grid;
+  place-items: center;
+}
+.profile__body {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #e2e8f0;
+  width: 90vw;
+  height: 96vh;
+  /* border: 1px solid black; */
+  display: flex;
+  position: relative;
+}
+.profile__rightside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile__bottomrightside {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  height: 42vh;
+  width: 59.7vw;
+  background-color: white;
+  /* padding: 10px; */
+  margin-right: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 2px grey;
+  position: absolute;
+  right: 2vw;
+  bottom: 2vh;
+  padding: 2vh;
+}
+.profile__bottomrightside::-webkit-scrollbar {
+  display: none;
+}
+.profile__toprightside {
+  height: 40vh;
+  margin-bottom: 10vh;
+  width: 61.3vw;
+  margin-left: auto;
+  position: absolute;
+  right: 1.2vw;
+  padding: 2vh;
+  top: 0;
+}
+.profile__topleftside {
+  background-color: white;
+  height: 50vh;
+  width: 23vw;
+  padding: 10px;
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  border-radius: 5px;
+  box-shadow: 0 0 2px grey;
+  display: grid;
+  place-items: center;
+}
+.profile__bottomleftside > div {
+  display: flex;
+  align-items: center;
+}
+.profile__bottomleftside {
+  background-color: white;
+  height: 37vh;
+  margin-top: 8vh;
+  width: 23vw;
+  position: absolute;
+  bottom: 2vh;
+  left: 2vw;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 2px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile__pic__avatar {
+  width: 15vw !important;
+  height: 33vh !important;
+}
+.profile__fullname {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.profile__title {
+  font-style: italic;
+  font-size: 0.9rem;
+}

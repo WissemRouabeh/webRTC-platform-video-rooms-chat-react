@@ -1,0 +1,78 @@
+.roomi__container {
+  display: flex;
+  /* width: 100vw; */
+  /* border: 1px solid black; */
+}
+.roomi_messanging {
+  flex: 0.3;
+}
+.roomi_streaming {
+  flex: 0.7;
+  /* border: 1px solid black; */
+  /* width: 90%; */
+  height: 100vh;
+  position: relative;
+  background-color: #34495523;
+}
+
+#roomi_participants {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+
+  flex-wrap: nowrap wrap-reverse;
+  width: 100%;
+  height: 20vh;
+  border-top: 1px solid white;
+  /* border: 1px solid black; */
+}
+/* #roomi_participants::-webkit-scrollbar {
+  display: none;
+} */
+#roomi_participants video {
+  width: 180px;
+  height: 118px;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  /* border: 1px solid black; */
+
+  /* position: absolute; */
+}
+#roomi_owner {
+  /* border: 1px solid green; */
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+#roomi_owner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+#roomi_owner button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 10px;
+}
+.roomi_optionsCall {
+  color: white !important;
+  position: absolute;
+  bottom: 5px;
+  width: 40%;
+  left: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#roomi__webcam,
+#roomi__mic {
+  cursor: pointer;
+
+  font-size: 30px !important;
+}

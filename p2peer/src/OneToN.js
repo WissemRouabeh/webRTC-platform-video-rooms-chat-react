@@ -8,21 +8,29 @@ function OneToN(props) {
   const roomID = props.match.params.roomID;
   const peerList = [];
   const mypeer = new Peer(undefined, {
-    host: "wissemrouabehplatform2.herokuapp.com",
-    port: "443",
+    // host: "wissemrouabehplatform2.herokuapp.com",
+    // port: "443",
+
+    port: 443,
+    path: "/",
+    secure: true,
   });
 
   useEffect(() => {
     socketRef.current = io.connect("/");
+
     navigator.mediaDevices
       .getUserMedia({
         video: { torch: true },
         audio: { echoCancellation: true, noiseSuppression: true },
       })
       .then((stream) => {
+        // if (owner) uservideo.current.srcObject = stream;
+
         let video = document.createElement("video");
         video.srcObject = stream;
         video.muted = true;
+        // video.setAttribute("useRef", { uservideo });
 
         var element = document.getElementById("users");
         element.appendChild(video);
@@ -49,6 +57,7 @@ function OneToN(props) {
       });
 
     mypeer.on("open", (id) => {
+      alert(id);
       socketRef.current.emit("joinothers", {
         roomid: roomID,
         id,
@@ -61,12 +70,18 @@ function OneToN(props) {
       if (!peerList.includes(call.peer)) {
         //you can also check if user grabbed from bd is joined(attribute in bd )
         let video = document.createElement("video");
+        video.setAttribute("id", id);
         video.srcObject = partnerstream;
         var element = document.getElementById("users");
         element.appendChild(video);
         video.play();
-        peerList.push(call.peer);
+        // video.remove();
       }
+    });
+    call.on("close", () => {
+      alert("closed");
+      var element = document.getElementById(id);
+      element.remove();
     });
   }
   return (

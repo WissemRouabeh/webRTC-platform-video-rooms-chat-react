@@ -2,7 +2,7 @@ import React from "react";
 import "./messagecard.css";
 import Avatar from "@material-ui/core/Avatar";
 
-function MessageCard() {
+function MessageCard({ conversation }) {
   return (
     <div>
       <div className="message__card">
@@ -10,8 +10,8 @@ function MessageCard() {
           <Avatar />
         </div>
         <div className="message__card__body">
-          <div className="message__name">Wissem Rouabeh </div>
-          <div className="message__text">Lorem ipsum dolor sit amet con</div>
+          <div className="message__name">{conversation.person} </div>
+          <div className="message__text">{conversation.lastmessage}</div>
         </div>
         <div className="message__card__divider"></div>
       </div>

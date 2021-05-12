@@ -29,6 +29,8 @@
   width: 100%;
   padding-bottom: 5px;
   margin-left: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .messenger__messages::-webkit-scrollbar {
   display: none;

@@ -1,0 +1,79 @@
+/* .register__button {
+  color: primary
+} */
+.register__form {
+  border: 1px #cccdce solid;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f6f8fa;
+  width: 350px;
+  height: 450px;
+}
+/* .register__container {
+  border: 1px #cccdce solid;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f6f8fa;
+  width: 270px;
+  height: 200px;
+} */
+.register__email__input,
+.register__password__input {
+  width: 100%;
+  border: 1px #cccdce solid;
+  border-radius: 5px;
+  outline: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+.register__email__input:focus,
+.register__password__input:focus {
+  filter: drop-shadow(0 0 2px #1976d2);
+}
+.register__email__text,
+.register__password__text {
+  font-size: 14px;
+  font-weight: 500;
+}
+.register__button__section {
+  margin-top: 10px;
+  display: grid;
+  place-items: center;
+}
+.register__button {
+  background-color: #1976d2 !important;
+  width: 150px;
+  height: 30px;
+  text-transform: inherit !important;
+  font-size: 13px !important;
+  text-align: right !important;
+}
+.register__password__text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.register__signup {
+  width: 370px;
+  margin-top: 15px;
+  border: 1px #cccdce solid;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.register__signup__create {
+  cursor: pointer;
+  color: #097aec;
+  font-weight: 500;
+}

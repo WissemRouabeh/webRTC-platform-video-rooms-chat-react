@@ -1,7 +1,8 @@
 .navbar__container {
   display: flex;
   padding: 5px 5vw;
-  background-color: #1976d2;
+  /* background-color: #1976d2; */
+  background-color: #344955;
   align-items: center;
   /* border-radius: 20px; */
   height: 50px;
@@ -15,8 +16,9 @@
 }
 .navbar__search {
   align-items: center;
-  height: 7vh;
-  background-color: #1a5a99;
+  height: 6vh;
+  /* background-color: #1a5a99; */
+  background-color: #293942;
   padding: 0 5px;
   margin-left: 1.5vw;
   display: flex;
@@ -39,6 +41,7 @@
   background: transparent;
   color: white;
   box-sizing: border-box;
+  margin-top: 10px;
 }
 .navbar__search > input:focus {
   width: 22vw;
@@ -76,11 +79,12 @@
   display: none;
   margin-left: 3vw;
   position: absolute;
-  right: -5px;
+  right: 5px;
   top: 60px;
   padding: 10px;
   border-radius: 10px;
-  background-color: #1976d2;
+  /* background-color: #1976d2; */
+  background-color: #344955;
 }
 
 .nav__tab {
@@ -99,7 +103,8 @@
 }
 .nav__tab:hover {
   margin-bottom: 10px;
-  background-color: #166ec7;
+  /* background-color: #166ec7; */
+  background-color: #47606ea8;
   border-radius: 5px;
 }
 .navbar__container .MuiSvgIcon-root {

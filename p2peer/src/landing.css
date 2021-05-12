@@ -1,0 +1,106 @@
+.landing__container {
+  height: 100vh;
+  /* background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  ); */
+  background: url("https://images.ctfassets.net/qjx9xgp99sha/35jRLYunoknrSOCTdwB3dN/60b9007668720c5831d8bc0491356aae/clare_paint__zoom_backgrounds_Make_Waves_2.jpg");
+  /* background-repeat: no-repeat; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+.landing__navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 10px;
+  right: 5px;
+  color: white;
+  font-size: 20px;
+}
+.landing__navbar button {
+  height: 30px;
+  margin: 10px 0;
+  margin: 0 2px;
+  /* margin-left: auto; */
+  float: right;
+  width: 60%;
+  height: 40px;
+  border: none;
+  border: solid 1px white;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0);
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+#landing__btn_signin {
+  border: none;
+}
+.landing__center {
+  /* background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 0.5) 0%,
+    rgba(148, 188, 233, 0.5) 100%
+  ); */
+
+  backdrop-filter: blur(3px);
+  border: 1px solid #8ba9a7;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 20px #8ba9a7;
+}
+h7 {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  /* background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  ); */
+  /* margin-bottom: 40px; */
+}
+.landing__paste {
+  display: flex;
+
+  margin-top: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.226);
+  border-radius: 10px;
+  padding: 2px;
+  background-color: white;
+  height: 30px;
+}
+.landing__container input {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: inherit;
+  background: rgba(0, 0, 0, 0);
+  margin-top: -2px;
+}
+.landing__container button {
+  height: 30px;
+  margin: 10px 0;
+  /* margin-left: auto; */
+  float: right;
+  width: 70%;
+  height: 40px;
+  border: none;
+  border: solid 1px white;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0);
+  font-size: 20px;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+}
+.landing__container button:hover {
+  background: white;
+  color: #0a84c8;
+}

@@ -1,0 +1,103 @@
+.editableprofile__container {
+  display: grid;
+  place-items: center;
+  min-height: 84vh;
+}
+.editableprofile__body {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #e2e8f0;
+  overflow-y: auto;
+  width: 70vw;
+  min-height: 84vh;
+  /* border: 1px solid black; */
+  display: flex;
+  position: relative;
+}
+.editableprofile__rightside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.editableprofile__bottomrightside {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  height: 28.7vh;
+  width: 43.3vw;
+  background-color: white;
+  /* padding: 10px; */
+  margin-right: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 2px grey;
+  position: absolute;
+  right: 2vw;
+  bottom: 2vh;
+  padding: 2vh;
+}
+.editableprofile__bottomrightside::-webkit-scrollbar {
+  display: none;
+}
+.editableprofile__toprightside {
+  height: 40vh;
+  margin-bottom: 10vh;
+  width: 45vw;
+  margin-left: auto;
+  position: absolute;
+  right: 1.2vw;
+  padding: 2vh;
+  top: 0;
+}
+.editableprofile__topleftside {
+  background-color: white;
+  height: 50vh;
+  width: 20vw;
+  padding: 10px;
+  position: absolute;
+  top: 2vh;
+  left: 2vw;
+  border-radius: 5px;
+  box-shadow: 0 0 2px grey;
+  display: grid;
+  place-items: center;
+}
+
+.editableprofile__bottomleftside {
+  background-color: white;
+  height: 25vh;
+  margin-top: 8vh;
+  width: 20vw;
+  position: absolute;
+  bottom: 2vh;
+  left: 2vw;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 2px grey;
+}
+.editableprofile__pic__avatar {
+  width: 15vw !important;
+  height: 33vh !important;
+}
+.editableprofile__fullname {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.editableprofile__title {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+#input__profile__fullname {
+  text-align: center;
+  font-weight: 700;
+  font-size: larger;
+}
+#input__profile__title {
+  text-align: center;
+  font-size: smaller;
+}
+#input__profile__mobile {
+  font-size: 14px;
+}
+#input__profile__address {
+  font-size: 14px;
+  width: 30vw;
+}
