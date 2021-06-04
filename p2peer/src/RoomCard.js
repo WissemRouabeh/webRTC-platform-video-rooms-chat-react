@@ -115,7 +115,7 @@ function RoomCard({
   }
   return (
     <div className="roomcard__container">
-      {room._id}
+      {/* {room._id} */}
       <Card id="a1" className={classes.root}>
         <CardHeader
           avatar={
@@ -159,9 +159,8 @@ function RoomCard({
 
         <CardContent>
           <Typography variant="body2" color="textSecondary" component={"div"}>
-            {room.description}
-
-            <Typography component={"div"}>{room.description}</Typography>
+            <p className="roomcard_description">{room.description}</p>
+            {/* <Typography component={"div"}>{room.description}</Typography> */}
           </Typography>
         </CardContent>
         <CardActions disableSpacing>

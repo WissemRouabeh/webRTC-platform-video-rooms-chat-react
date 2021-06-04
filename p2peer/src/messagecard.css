@@ -1,6 +1,6 @@
 .message__card {
   width: 25vw;
-  height: 100px;
+  height: 80px;
   display: flex;
   background-color: white;
   margin-left: 2px;
@@ -10,13 +10,14 @@
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+  border-radius: 4px;
 }
 .message__card:hover {
   transform: scale(1.02);
   box-shadow: 0 0 5px grey;
 }
 .message__card:first-child {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 /* .message__card__divider {
   height: 1px;
@@ -30,11 +31,12 @@
   word-wrap: break-word;
 }
 .message__card__avatar {
-  margin-top: -3vh;
+  margin-top: 0vh;
   margin-left: 10px;
   margin-right: 10px;
 }
 .message__name {
+  margin-top: -1vh;
   font-weight: 800;
   color: rgb(36, 36, 36);
 }

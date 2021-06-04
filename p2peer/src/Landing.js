@@ -6,7 +6,6 @@ function Landing() {
   const [contected, setContected] = useState(false);
   const [user, setUser] = useState("Wissem Rouabeh");
   const [link, setLink] = useState("");
-
   // const [roomid, setRoomid] = useState();
   var roomid;
   const location = useLocation();

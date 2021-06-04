@@ -1,11 +1,12 @@
 .navbar__container {
   display: flex;
   padding: 5px 5vw;
+  z-index: 1999999;
   /* background-color: #1976d2; */
   background-color: #344955;
   align-items: center;
   /* border-radius: 20px; */
-  height: 50px;
+  height: 60px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1vh;
@@ -109,5 +110,9 @@
 }
 .navbar__container .MuiSvgIcon-root {
   color: white;
-  font-size: 22px;
+  font-size: 25px;
+}
+.navbar__logo {
+  font-size: 40px !important;
+  margin-right: 5px;
 }

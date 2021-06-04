@@ -24,6 +24,7 @@ import MeetingRoomIcon from "@material-ui/icons/MeetingRoom";
 import SettingsApplicationsIcon from "@material-ui/icons/SettingsApplications";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import "./home.css";
+import UpdateDelete from "./UpdateDelete.js";
 
 function Home() {
   const [selecetd, setSelecetd] = useState("home");
@@ -48,6 +49,9 @@ function Home() {
         return (
           <DisplayRooms Setselected={setSelecetd} ChangeBody={changeBody} />
         );
+        break;
+      case "manage":
+        return <UpdateDelete />;
         break;
       case "discover":
         return <DiscoverRooms />;
@@ -104,6 +108,9 @@ function Home() {
               </NavItem>
               <NavItem eventKey="myspace">
                 <NavText>My Space</NavText>
+              </NavItem>
+              <NavItem eventKey="manage">
+                <NavText>Manage</NavText>
               </NavItem>
             </NavItem>
 

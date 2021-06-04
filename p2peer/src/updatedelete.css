@@ -1,0 +1,10 @@
+.updatedelete__searchsection {
+  display: flex;
+  align-items: center;
+}
+.updatedelete__textDescription {
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

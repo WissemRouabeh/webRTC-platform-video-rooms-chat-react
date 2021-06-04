@@ -69,6 +69,7 @@ function Profile(props) {
   }
   useEffect(async () => {
     await api
+      //here's id profile but cluster not readu
       .get("/user/userinformations/findbyid/" + localStorage.getItem("id"))
       .then((docs) => {
         setCurrentProfile(docs.data);

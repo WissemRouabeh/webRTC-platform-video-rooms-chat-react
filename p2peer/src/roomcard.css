@@ -3,3 +3,9 @@
   transition: all 1s;
   width: 300px;
 }
+.roomcard_description {
+  height: 56px;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

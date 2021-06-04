@@ -8,7 +8,7 @@ import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
 import MiniLogin from "./MiniLogin.js";
 import FavoriteIcon from "@material-ui/icons/Favorite";
-
+import VoiceChatRoundedIcon from "@material-ui/icons/VoiceChatRounded";
 import api from "./api";
 
 import "./navbar.css";
@@ -35,11 +35,7 @@ function Navbar({ SetChangepage }) {
     <div>
       <div className="navbar__container">
         <div className="navbar__left">
-          <img
-            src="https://png.pngtree.com/element_our/png/20181011/linkedin-social-media-icon-design-template-vector-png_127000.jpg"
-            alt="icon"
-            style={{ width: "50px", height: "50px", objectFit: "fill" }}
-          />
+          <VoiceChatRoundedIcon className="navbar__logo" />
           <div className="navbar__search">
             <SearchIcon />
             <input type="text" placeholder="search" />

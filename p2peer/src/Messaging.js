@@ -108,9 +108,10 @@ function Messaging({ roomID }) {
     // } else {
     //   setMessages((msg) => [...msg, message]);
     // }
-    document
-      .getElementsByClassName("messenger_focus_on_last")
-      [messages.length].scrollIntoView();
+    if (messages != undefined)
+      document
+        .getElementsByClassName("messenger_focus_on_last")
+        [messages?.length].scrollIntoView();
   }
   return (
     <div>

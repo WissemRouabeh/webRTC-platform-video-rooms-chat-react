@@ -27,6 +27,8 @@ function Roomi(props) {
   const uservideo = useRef();
   const myStream = useRef([]);
   const myStreamList = [];
+  const [sharewith, setSharewith] = useState([]);
+  const [mystream, setMystream] = useState();
   const mycurrentStream = useRef();
   const roomID = props.match.params.roomID;
   const [room, setRoom] = useState({});
@@ -127,14 +129,19 @@ function Roomi(props) {
             call.on("stream", (partnerstream) => {
               //check for owner room to put his stream in the right place
               console.log("pper" + call.peer);
-              if (call.peer === owner.current.username) {
+              if (call.peer === location.state.owner.username) {
                 addVideoStreamOwner(partnerstream);
                 // const peersarray = myStream.current;
                 // peersarray.push(call.peerConnection);
                 myStream.current = call.peerConnection;
                 myStreamList.push(call.peerConnection);
-                console.log(myStreamList.length);
-              } else addVideoStream(video, partnerstream, call.peer);
+                setSharewith(myStreamList);
+                console.log("size" + myStreamList.length);
+              } else {
+                addVideoStream(video, partnerstream, call.peer);
+                myStreamList.push(call.peerConnection);
+                setSharewith(myStreamList);
+              }
               peerList.push(call.peer);
             });
           });
@@ -177,6 +184,7 @@ function Roomi(props) {
     call.on("stream", (userVideoStream) => {
       myStream.current = call.peerConnection;
       myStreamList.push(call.peerConnection);
+      setSharewith(myStreamList);
       console.log(myStreamList.length);
 
       if (userId === owner.current.username) {
@@ -221,14 +229,14 @@ function Roomi(props) {
       })
       .then((stream) => {
         let videotrack = stream.getVideoTracks()[0];
-
         uservideo.current.srcObject = stream;
         videotrack.onended = () => {
           stopsharescreen();
         };
-
         try {
-          myStreamList.forEach((element) => {
+          //myStreamList
+          sharewith.forEach((element) => {
+            console.log(element);
             let sender = element
               .getSenders()
               .find((e) => e.track.kind == videotrack.kind);
@@ -244,7 +252,7 @@ function Roomi(props) {
       let videotrack = mycurrentStream.current.getVideoTracks()[0];
       uservideo.current.srcObject = mycurrentStream.current;
       try {
-        myStreamList.forEach((element) => {
+        sharewith.forEach((element) => {
           let sender = element
             .getSenders()
             .find((e) => e.track.kind == videotrack.kind);
@@ -272,7 +280,7 @@ function Roomi(props) {
         <div className="roomi_streaming">
           <div id="roomi_owner">
             <video ref={uservideo}></video>
-            {owner._id === localStorage.getItem("id") && (
+            {location.state.owner._id === localStorage.getItem("id") && (
               <Button
                 variant="contained"
                 color="primary"
@@ -295,7 +303,7 @@ function Roomi(props) {
               />
               <MicIcon
                 id="roomi__mic"
-                style={{ color: mic ? "white" : "grey" }}
+                style={{ color: "white" }}
                 onClick={() => {
                   mici();
                 }}

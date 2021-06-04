@@ -2,12 +2,13 @@
   display: flex;
 }
 .home__sidebar {
-  /* flex: 0.25; */
+  z-index: 109999;
+  flex: 0.25;
 
   background-color: #f4f4f4;
   height: 89vh;
 }
 .home__dynamic {
   /* flex: 0.75; */
-  margin-left: 240px;
+  margin-left: 230px;
 }

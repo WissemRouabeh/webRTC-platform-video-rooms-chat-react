@@ -79,7 +79,7 @@ function Popupmessage({ profileid, username }) {
             placeholder={placeholder}
             onChange={(e) => setMp(e.target.value)}
             cols="50"
-            rows="3"
+            rows="1"
           ></textarea>
 
           <Button

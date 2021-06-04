@@ -4,6 +4,9 @@ import SendIcon from "@material-ui/icons/Send";
 import Button from "@material-ui/core/Button";
 import Message from "./Message";
 import io from "socket.io-client";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
+import IconButton from "@material-ui/core/IconButton";
+
 import React, { useEffect, useRef, useState } from "react";
 import "./messenger.css";
 import api from "./api";
@@ -28,6 +31,7 @@ function Messenger({ currentconversation }) {
         // console.log(messages[0].sender);
       });
   }, [currentconversation]);
+
   useEffect(() => {
     socketRef.current = io.connect("/");
     socketRef.current.emit(
@@ -41,6 +45,7 @@ function Messenger({ currentconversation }) {
         [messages.length].scrollIntoView();
     });
   }, []);
+
   const getCurrentDate = () => {
     var date = new Date().getDate();
     var month = new Date().getMonth() + 1;
@@ -89,8 +94,17 @@ function Messenger({ currentconversation }) {
             {currentconversation.person}
           </div>
           <div className="messenger__make_room">
-            Make
-            <MeetingRoomIcon />
+            <IconButton
+              className="messenger__iconbutton"
+              aria-label="settings"
+              onClick={() => {
+                window
+                  .open("/profile/" + currentconversation.receiver, "_blank")
+                  .focus();
+              }}
+            >
+              <MoreVertIcon className="messenger__profile" />
+            </IconButton>
           </div>
         </div>
         <div className="messenger__messages">

@@ -9,7 +9,7 @@
   height: 85vh;
 }
 .messenger__header {
-  background-color: #1976d205;
+  background-color: #1976d209;
   height: 100%;
   display: flex;
   align-items: center;
@@ -35,17 +35,19 @@
 .messenger__messages::-webkit-scrollbar {
   display: none;
 }
+.messenger__profile {
+  color: white;
+  font-size: 12px;
+}
+.messenger__iconbutton {
+  font-size: 10px;
+}
 .messenger__make_room {
   margin-left: auto;
   margin-right: 10px;
-  display: flex;
-  align-items: center;
-  font-size: large;
   cursor: pointer;
-  background-color: #19d285;
+  background-color: #31d691b5;
   color: white;
-  font-weight: 400;
-  padding: 10px;
   border-radius: 10px;
 }
 .messenger__make_room:hover {
