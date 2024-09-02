@@ -1,0 +1,27 @@
+name: Test SSH Connection and List Directory
+
+on:
+  workflow_dispatch:  # Allows the workflow to be run manually
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install SSH client
+      run: sudo apt-get install -y ssh
+
+    - name: Add SSH key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        known_hosts: '3.13.252.53'
+
+    - name: Connect to server and list directory
+      run: |
+        ssh -o StrictHostKeyChecking=no ubuntu@3.13.252.53 << 'EOF'
+          ls -alh 
+        EOF
