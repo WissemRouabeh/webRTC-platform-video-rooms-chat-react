@@ -1,0 +1,31 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main  # Deploy on push to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install SSH client
+      run: sudo apt-get install -y ssh
+
+    - name: Add SSH key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        known_hosts: 'your.server.com'
+
+    - name: Connect to server and redeploy
+      run: |
+        ssh -o StrictHostKeyChecking=no user@your.server.com << 'EOF'
+          cd /path/to/your/project
+          yarn install
+          yarn build
+        EOF
